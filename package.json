@@ -1,0 +1,29 @@
+{
+  "name": "riyaadhushshaalihiin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "concurrently \"eleventy\" \"postcss source/_assets/style/style.css -o public/_assets/style/style.css\"",
+    "eleventy": "eleventy",
+    "license": "license-checker --markdown --out source/license/license.md --customPath licenseFormat.json",
+    "start": "eleventy --serve"
+  },
+  "author": "nahlm",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.2.5",
+    "eleventy-plugin-sass": "^1.2.0",
+    "license-report": "^4.5.0",
+    "lit": "^2.0.0-rc.2",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "concurrently": "^6.2.0"
+  }
+}
